@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        <h2>{{user_profile.first_name}} {{user_profile.last_name}}</h2>
+        <h4>{{user_profile.email}}</h4>
+        <h4>{{user_profile.phone}}</h4>
+        <hr>
+        <br> 
+        <p> <b>Summary</b></p>
+        <p>{{user_profile.summary}}</p>
+        <hr>
+        <p><b> Skills</b></p>
+        <p>{{user_profile.skills}}</p>
+        <hr>
+        <p> <b>Education</b></p>
+        <ul>
+            <li>{{user_profile.school}}</li>
+            <li>{{user_profile.degree}}</li>
+            <li>{{user_profile.university}}</li>
+        </ul>
+        <hr>
+        <p><b> Work Experience: </b> </p>
+        <p>
+            {{user_profile.previous_work}}
+        </p>
+        <hr>
+        <p><b> Achievements: </b> </p>
+        <p>
+            {{user_profile.achievements}}
+        </p>
+
+
+    </body>
+</html>
